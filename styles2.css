@@ -1,0 +1,84 @@
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-image: url('background-image-url'); /* 更改為你的背景圖片 URL */
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9); /* 更透明的背景 */
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-family: 'Arial', sans-serif;
+    font-size: 2em;
+    color: #ff4081; /* 標題顏色 */
+    margin: 0;
+}
+
+h2 {
+    font-family: 'Georgia', serif;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #ff4081;
+    margin-top: 20px;
+}
+
+section {
+    margin: 0;
+}
+
+.date {
+    font-family: 'Arial', sans-serif;
+    font-size: 1.2em;
+    color: #ff4081;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.content p {
+    margin: 0 0 20px 0; /* 增加段落間距 */
+    line-height: 1.6;
+    font-size: 1em;
+    text-align: justify;
+}
+
+.content p:first-of-type {
+    margin-top: 0;
+}
+
+.content p:last-of-type {
+    margin-bottom: 0;
+}
+
+@media (max-width: 600px) {
+    .container {
+        margin: 10px;
+        padding: 10px;
+    }
+    
+    h1 {
+        font-size: 1.5em;
+    }
+    
+    h2 {
+        font-size: 1.2em;
+    }
+    
+    .date {
+        font-size: 1em;
+    }
+}
