@@ -1,0 +1,72 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: #3397e9; /* 背景顏色 */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+    background: #fff; /* 背景顏色 */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 陰影效果 */
+    border: 1px solid #ddd;
+}
+
+h1 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#puzzle {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 1px;
+    margin: auto;
+    width: 306px;
+}
+
+.piece {
+    width: 100px;
+    height: 100px;
+    background-size: 300px 300px;
+    cursor: pointer;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    transition: transform 0.2s ease-in-out; /* 動畫效果 */
+    background-color: #444;
+    position: relative;
+}
+
+.piece:hover {
+    transform: scale(1.1); /* 當鼠標懸停時放大效果 */
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#status {
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #333;
+}
